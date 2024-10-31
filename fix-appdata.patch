@@ -1,0 +1,31 @@
+From cae53d42e528632fb12df5a28bd60b5b55aae76a Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Thu, 31 Oct 2024 22:57:14 +0300
+Subject: [PATCH] Fix appdata papercuts
+
+---
+ usr/share/metainfo/pstube.xml | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/usr/share/metainfo/pstube.xml b/usr/share/metainfo/pstube.xml
+index 7d9e97b..26d66a3 100644
+--- a/usr/share/metainfo/pstube.xml
++++ b/usr/share/metainfo/pstube.xml
+@@ -27,9 +27,13 @@
+ 		</ul>
+ 	</description>
+ 	<screenshots>
+-		<screenshot>
++		<screenshot type="default">
+ 			<image type="source">https://github.com/prateekmedia/pstube/blob/2.0.0/assets/screenshots/home-desktop.jpg?raw=true</image>
++		</screenshot>
++		<screenshot>
+ 			<image type="source">https://github.com/prateekmedia/pstube/blob/2.0.0/assets/screenshots/search-desktop.jpg?raw=true</image>
++		</screenshot>
++		<screenshot>
+ 			<image type="source">https://github.com/prateekmedia/pstube/blob/2.0.0/assets/screenshots/video-desktop.jpg?raw=true</image>
+ 		</screenshot>
+ 	</screenshots>
+--
+libgit2 1.7.2
+

@@ -27,6 +27,8 @@ modules:
       - sed -i 's/<id>pstube/<id>io.github.prateekmedia.pstube/' /app/share/metainfo/pstube.xml
       - ln -s /app/pstube/pstube /app/bin/pstube
     sources:
+      - type: patch
+        path: fix-appdata.patch
       - type: archive
         only-arches:
           - x86_64
